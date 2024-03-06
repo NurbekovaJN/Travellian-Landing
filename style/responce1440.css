@@ -1,0 +1,196 @@
+@media(max-width: 1440px){
+    .wrapper{
+        width: 1440px;
+    }
+    .header{
+        width: 1440px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .main{
+        padding-left: 32px;
+    }
+    .main__form_container{
+        width: 1205px;
+        height: 216px;
+        padding-left: 32px;
+    }
+    .main__input_container{
+        width: 195px;
+    }
+
+    .destinations{
+        padding-left: 32px;
+    }
+    .dest__title{
+        width: 1172px;
+        height: 85px;
+    }
+    .dest__subtitle{
+        width: 1172px;
+        height: 28px;
+    }
+    .arrow{
+        right: 32px;
+        top: 125px;
+    }
+
+    .special{
+        margin-right: 32px;
+    }
+    .special__arrow{
+        left: 32px;
+    }
+    .special__content{
+        width: 1376px;
+    }
+    .image__lisbon{
+        width: 437px;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .image__anthens{
+        width: 437px;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .image__rome{
+        width: 437px;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .text__block{
+        width: 437px;
+        height: 343px;
+        padding: 40px 24px;
+    }
+    .special__text{
+        width: 100%;
+        margin: 0;
+        margin-top: 26px;
+    }
+    .special__title__city{
+        margin-left: 0;
+    }
+    .price__details{
+        margin-left: 0;
+        margin-top: 24px;
+    }
+
+    .blog{
+        padding-left: 32px;
+    }
+    .blog__title{
+        margin-left: 0;
+    }
+    .blog__line{
+        margin-left: 0;
+    }
+    .blog__subtitle{
+        margin-left: 0;
+    }
+    .blog__content{
+        margin-left: 0;
+        width: 1376px;
+        height: 802px;
+    }
+    .italy__image{
+        width: 672px;
+        height: 770px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .italy__text{
+        width: 672px;
+        height: 144px;
+        right: 32px;
+        margin-bottom: 45px;
+        margin-top: 25px;
+    }
+    .italy__subtitle{
+        height: 468px;
+    }
+    .read{
+        width: 672px;
+    }
+    .arrow__read{
+        width: 50px;
+    }
+
+    .trip__block{
+        height: 344px;
+    }
+    .trip__title{
+        margin-top: 100px;
+    }
+    .trip__square{
+        left: -25px;
+    }
+    .trip__container{
+        margin-left: 32px;
+    }
+    .trip__content{
+        width: 902px;
+        height: 545px;
+    }
+
+    .gallery{
+        padding-left: 32px;
+    }
+    .gallery__container{
+        width: 1376px;
+    }
+    .photo__container{
+        width: 1376px;
+    }
+    .photo__1{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 320px;
+        height: 500px;
+    }
+    .photo__2{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 320px;
+        height: 500px;
+    }
+    .photo__3{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 320px;
+        height: 500px;
+    }
+    .photo__4{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 320px;
+        height: 500px;
+    }
+
+    .experience{
+        margin-left: 32px;
+    }
+    .client{
+        min-width: 562px;
+        height: 336px;
+    }
+    .client__arrow{
+        right: 32px;
+    }
+
+    .newsletter{
+        margin-left: 89px;
+        margin-right: 89px;
+    }
+    .footer__content{
+        width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin: 0;
+        gap: 114.75px;
+    }
+}

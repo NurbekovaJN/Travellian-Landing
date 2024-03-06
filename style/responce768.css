@@ -1,0 +1,108 @@
+@media(max-width: 768px){
+    .wrapper{
+        width: 768px;
+    }
+    .header{
+        width: 768px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 32px;
+    }
+    .header__navs{
+        display: none;
+    }
+    .header__actions{
+        display: none;
+    }
+    .header__burger{
+        background-image: url(../image/burger_line.svg);
+        width: 37.5px;
+        height: 23px;
+    }
+    .header__logo{
+        width: 234px;
+        height: 45px;
+        background-size: cover;
+    }
+
+    .main{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 214px;
+        height: 789px;
+        background-image: url(../image/main768.png);
+    }
+    .main__title{
+        width: 80%;
+        color: rgb(255, 255, 255);
+        font-family: Playfair Display;
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .main__subtitle{
+        color: rgb(255, 255, 255);
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: left;
+        margin-top: 16px;
+    }
+    .main__form_container{
+        height: 216px;
+        width: 659px;
+        top: 498px;
+        padding-left: 32px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        padding-right: 270px;
+    }
+    .main__input_container input{
+        height: 31px;
+    }
+    .main__input_container select{
+        height: 31px;
+    }
+    .main__form{
+        flex-wrap: wrap;
+    }
+    .main__input_container{
+        width: 158px;
+    }
+    
+    .destinations{
+        padding-left: 20px;
+
+    }
+    .dest__title{
+        color: rgb(23, 36, 50);
+        font-family: Playfair Display;
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .dest__subtitle{
+        color: rgb(118, 126, 134);
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .dest__slider{
+        height: 340px;
+        gap: 28px;
+    }
+    .dest__slide{
+        min-width: 260px;
+        height: 340px;
+        background-size: cover;
+    }
+}
