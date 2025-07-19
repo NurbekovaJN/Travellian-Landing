@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responce1440.css">
     <link rel="stylesheet" href="style/responce768.css">
+    <link rel="stylesheet" href="style/responce320.css">
 
 </head>
 
@@ -18,20 +19,22 @@
             <a href="#" class="header__logo"></a>
             <div class="header__burger"></div>
             <div class="header__navs">
-                <a href="#" class="header__link">Home</a>
-                <a href="#" class="header__link">Explore</a>
-                <a href="#" class="header__link">Travel</a>
-                <a href="#" class="header__link">Blog</a>
-                <a href="#" class="header__link">Pricing</a>
+                <a class="header__link" data-finish=".main">Home</a>
+                <a class="header__link" data-finish=".trip">Explore</a>
+                <a class="header__link" data-finish=".destinations">Travel</a>
+                <a class="header__link" data-finish=".blog">Blog</a>
+                <a class="header__link" data-finish=".special">Pricing</a>
             </div>
             <div class="header__actions">
-                <a href="#" class="header__link">Login</a>
-                <button class="header__button">Sign up</button>
+                <a href="./login.html" class="header__link">Login</a>
+                <a href="./signup.html">
+                    <button class="header__button">Sign up</button>
+                </a>
             </div>
         </header>
         <main class="main">
             <h1 class="main__title">Start your unforgettable journey with us.</h1>
-            <p class="main__subtitle">The best travel for your jorney begins now</p>
+            <p class="main__subtitle">The best travel for your journey begins now</p>
             <!-- <div class="main__navigation">
                 <div class="main__pagination"></div>
                 <div class="main__pagination"></div>
@@ -49,24 +52,29 @@
                 <form class="main__form">
                     <div class="main__input_container">
                         <label for="">DESTINATION</label>
-                        <input type="text" name="" id="">
+                        <input type="text" pattern="^[A-Za-zА-Яа-я\-\s]+$" class="form__input" minlength="2" maxlength="40" name="destination" required>
+                        <p class="error__message" 
+                        data-error-pattern="Имя может содержать буквы кирилицы, латиницы, пробелы, нижние подчеркивания и дефисы" 
+                        data-error-length="Имя может содержать от 2 до 40 символов"></p>
                     </div>
                     <div class="main__input_container">
                         <label for="">PERSON</label>
-                        <select name="" id="">
-                            <option value="person1">1</option>
-                            <option value="person2">2</option>
+                        <select name="person" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
                         </select>
                     </div>
                     <div class="main__input_container">
                         <label for="">CHECK IN</label>
-                        <input type="date" name="" id="">
+                        <input type="date"  class="form__input" name="checkin" required>
+                        <p class="error__message"></p>
                     </div>
                     <div class="main__input_container">
                         <label for="">CHECK OUT</label>
-                        <input type="date">
+                        <input type="date"  class="form__input" name="checkout" required>
+                        <p class="error__message"></p>
                     </div>
-                    <button class="main__button">Book Now</button>
+                    <button class="main__button" disabled>Book Now</button>
                 </form>
             </div>
         </main>
@@ -85,12 +93,34 @@
 
             <div class="dest__slider">
                 <div class="dest__slide berlin">
+                    <div class="slide__text">
+                        <h2 class="title__slide">Monument of Berlin</h2>
+                        <p class="subtitle__slide">Berlin, Germany</p>
+                    </div>
                 </div>
                 <div class="dest__slide london">
+                    <div class="slide__text">
+                        <h2 class="title__slide">Millenium Bridge</h2>
+                        <p class="subtitle__slide">London, United Kingdom</p>
+                    </div>
                 </div>
                 <div class="dest__slide venice">
+                    <div class="slide__text">
+                        <h2 class="title__slide">Rialto Bridge</h2>
+                        <p class="subtitle__slide">Venice, Italy</p>
+                    </div>
                 </div>
                 <div class="dest__slide lisbon">
+                    <div class="slide__text">
+                        <h2 class="title__slide">Sea of Orange Tiles</h2>
+                        <p class="subtitle__slide">Lisbon, Portugal</p>
+                    </div>
+                </div>
+                <div class="dest__slide berlin">
+                    <div class="slide__text">
+                        <h2 class="title__slide">Monument of Berlin</h2>
+                        <p class="subtitle__slide">Berlin, Germany</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -187,10 +217,37 @@
                         </div>
                     </div>
                 </div>
+                <div class="special__block">
+                    <div class="image__lisbon"></div>
+                    <div class="text__block">
+                        <div class="special__title__city">
+                            <div class="h1">Lisbon, Portugal</div>
+                            <div class="rating">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <p class="special__text">
+                            5 nights and 4 days in 5 star hotel, breakfast and lunch included.
+                            Very popular during the renaissance. Passage and
+                            going through the cites of the world in classical literature.
+                        </p>
+                        <div class="price__details">
+                            <div class="price__text">
+                                <p class="price__from">from</p>
+                                <p class="price">€500</p>
+                            </div>
+                            <button class="button_details">DETAILS</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- <section class="blog">
+        <section class="blog">
             <h2 class="blog__title">Our Blog</h2>
             <hr class="blog__line">
             <p class="blog__subtitle">An insight the incredible experience in the world</p>
@@ -215,9 +272,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="trip">
+        <section class="trip">
             <div class="trip__container">
                 <div class="trip__block">
                     <div class="trip__text">
@@ -262,9 +319,9 @@
                     <div class="city__4"></div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="gallery">
+        <section class="gallery">
             <div class="gallery__container">
                 <h2 class="gallery__title">Destination Gallery</h2>
                 <hr class="gallery__line">
@@ -279,10 +336,12 @@
                 <div class="photo__2"></div>
                 <div class="photo__3"></div>
                 <div class="photo__4"></div>
+                <div class="photo__4"></div>
+                <div class="photo__2"></div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="experience">
+        <section class="experience">
             <h2 class="exp__title">Traveler's Experiences</h2> 
             <hr class="exp__line">
             <p class="exp__subtitle">Here some awesome feedback from our travelers</p>
@@ -345,21 +404,42 @@
                         <p class="client__pro">Managing Director, JTH</p>
                     </div>
                 </div>
+                <div class="client">
+                    <div class="client__avatar avatar__3"></div>
+                    <p class="client__text">But I must explain to you how all this mistaken idea of denouncing 
+                        pleasure and praising pain was born and I will give you a complete account of the system 
+                        and expound the actual teachings of the great explorer of the truth, the master- builder 
+                        of human happiness.
+                    </p>
+                    <div class="client__rating">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+                    <div class="name">
+                        <p class="client__name">Tamara Bellis</p>
+                        <p class="client__pro">Managing Director, JTH</p>
+                    </div>
+                </div>
             </div>
             <div class="client__arrow">
                 <button class="left__button"></button>
                 <button class="right__button"></button>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="footer">
+        <section class="footer">
             <div class="newsletter">
                 <h2 class="news__title">Our Newsletter</h2>
                 <form class="news__frame">
                     <div class="email__frame">
                         <p class="email">Email</p>
                         <div class="email__box">
-                            <input type="text" placeholder="Enter your email" class="input__email" required>
+                            <input type="text"  name="email" placeholder="Enter your email" class="input__email" required
+                            pattern="^[\w+]+@[\w+]+\.[\w+]+$">
+                            <p class="err__message" data-error-pattern="Нужно указать почту"></p>
                         </div>
                     </div>
                     <button class="subscribe">Subscribe</button>
@@ -412,8 +492,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
     </div>
+    <script type="module" src="./script/script.js"></script>
 </body>
 
 </html>

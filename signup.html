@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/nullStyle.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="overlay">
+        <form class="signUp">
+            <label for="name">Name</label>
+            <input type="text" class="form__input__signUp" name="name" required minlength="2" maxlength="20" pattern="^[A-Za-z]+$">
+            <p class="err__message" 
+            data-error-length="Имя должно содержать более 2 символов"
+            data-error-pattern="Имя должно содержать латинские буквы"></p>
+
+            <label for="last__name">Last Name</label>
+            <input type="text" class="form__input__signUp" name="last__name" required minlength="2" maxlength="20" pattern="^[A-Za-z]+$">
+            <p class="err__message" 
+            data-error-length="Имя должно содержать более двух символов"
+            data-error-pattern="Имя должно содержать латинские буквы"></p>
+
+            <label for="email">Email</label>
+            <input type="email" class="form__input__signUp" name="email" required pattern="^[\w+]+@[\w+]+\.[\w+]+$">
+            <p class="err__message" data-error-pattern="Нужно указать почту"></p>
+
+            <label for="password">Password</label>
+            <input type="password" class="form__input__signUp" name="password1" required pattern="^[\w+]+$" minlength="5" maxlength="20">
+            <p class="err__message" 
+            data-error-pattern="Пароль должен содержать латинские буквы и числа" 
+            data-error-length="Пароль должен быть не менее 5 символов"></p>
+
+            <label for="password">Repead Password</label>
+            <input type="password" class="form__input__signUp" name="password2" required>
+            <p class="err__message"></p>
+
+            <button class="signUp__button">Sign Up</button>
+            <a href="index.html" class="back">Home</a>
+        </form>
+    </div>
+    <script type="module" src="./script/signup.js"></script>
+</body>
+</html>

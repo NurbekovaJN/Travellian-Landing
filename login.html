@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/nullStyle.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="overlay">
+        <form class="logIn">
+            <label for="email" class="form__label">Email</label>
+            <input class="form__input" name="email" required pattern="^[\w+]+@[\w+]+\.[\w+]+$">
+            <p class="err__message" data-error-pattern="Нужно указать почту"></p>
+            <label for="password" class="form__label">Password</label>
+            <input type="password" class="form__input" name="password" required pattern="^[\w+]+$" minlength="5" maxlength="20">
+            <p class="err__message" 
+            data-error-pattern="Пароль должен содержать латинские буквы и числа" 
+            data-error-length="Пароль должен быть не менее 5 символов"></p>
+            <button class="form__submit">Login</button>
+            <a href="index.html" class="back">Home</a>
+        </form>
+    </div>
+    <script type="module" src="./script/login.js"></script>
+</body>
+</html>
